@@ -1,5 +1,26 @@
 <resources>
     <string name="app_name">Android RGBase</string>
+    <string name="rolling_glory">Rolling Glory</string>
+    <string name="email_hello">hello@rollingglory.com</string>
+
+    <!-- sidebar -->
+    <string name="color">Color Palettes</string>
+    <string name="button">Buttons</string>
+    <string name="typography">Typography</string>
+    <string name="form">Form</string>
+
+    <!-- color -->
+    <string name="main_color">Main Color</string>
+    <string name="color_primary">Primary Color</string>
+    <string name="color_secondary">Secondary Color</string>
+    <string name="color_accent">Accent Color</string>
+    <string name="color_primary_text">Primary Text Color</string>
+    <string name="color_secondary_text">Secondary Text Color</string>
+    <string name="other_colors">Other Colors</string>
+
+    <!-- Content Description -->
+    <string name="cd_logo_rgb">logo RGB</string>
+    <string name="cd_color">color</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
