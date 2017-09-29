@@ -1,8 +1,7 @@
-package com.rollingglory.androidrgbase;
+package com.rollingglory.androidrgbase.template;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
@@ -10,13 +9,14 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.rollingglory.androidrgbase.R;
 import com.rollingglory.androidrgbase.base.BaseActivity;
-import com.rollingglory.androidrgbase.page.color.ColorFragment;
+import com.rollingglory.androidrgbase.template.page.button.ButtonFragment;
+import com.rollingglory.androidrgbase.template.page.color.ColorFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,6 +48,7 @@ public class MainActivity extends BaseActivity
         Fragment fragment = HomeFragment.newInstance();
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.fl_content, fragment).commit();
+        fab.setVisibility(View.GONE);
     }
 
     @Override
@@ -133,14 +134,21 @@ public class MainActivity extends BaseActivity
             case R.id.nav_color:
                 fragmentClass = ColorFragment.class;
                 tag = "color";
+                fab.setVisibility(View.GONE);
                 break;
             case R.id.nav_typography:
+                fab.setVisibility(View.GONE);
                 break;
             case R.id.nav_button:
+                fragmentClass = ButtonFragment.class;
+                tag = "button";
+                fab.setVisibility(View.VISIBLE);
                 break;
             case R.id.nav_form:
+                fab.setVisibility(View.GONE);
                 break;
             default:
+                fab.setVisibility(View.GONE);
                 fragmentClass = HomeFragment.class;
                 tag = "home";
         }

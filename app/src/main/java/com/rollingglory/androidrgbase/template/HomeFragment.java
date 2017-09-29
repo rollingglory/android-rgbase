@@ -1,12 +1,12 @@
-package com.rollingglory.androidrgbase;
+package com.rollingglory.androidrgbase.template;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.rollingglory.androidrgbase.R;
 import com.rollingglory.androidrgbase.base.BaseFragment;
-import com.rollingglory.androidrgbase.page.color.ColorFragment;
 
 import butterknife.ButterKnife;
 

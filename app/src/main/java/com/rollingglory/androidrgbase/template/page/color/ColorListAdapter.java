@@ -1,4 +1,4 @@
-package com.rollingglory.androidrgbase.page.color;
+package com.rollingglory.androidrgbase.template.page.color;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

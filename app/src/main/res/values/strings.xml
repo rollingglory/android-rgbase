@@ -18,12 +18,26 @@
     <string name="color_secondary_text">Secondary Text Color</string>
     <string name="other_colors">Other Colors</string>
 
+    <!-- Button -->
+    <string name="primary_button">Primary Button</string>
+    <string name="secondary_button">Secondary Button</string>
+    <string name="image_button">Image Button</string>
+    <string name="normal_state">Normal State</string>
+    <string name="disabled_state">Disabled State</string>
+    <string name="save">Simpan</string>
+    <string name="reedeem">Tukarkan</string>
+
     <!-- Content Description -->
     <string name="cd_logo_rgb">logo RGB</string>
     <string name="cd_color">color</string>
+    <string name="cd_btn_minus">Button Minus</string>
+    <string name="cd_btn_plus">Button Plus</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- general -->
+    <string name="integer">%1$d</string>
 </resources>
